@@ -1,9 +1,4 @@
 # web-ban-hang
-<<<<<<< HEAD
- 
-## Copyright® by DoCongSon
-  - ✔*Facebook :* [Đỗ Công Sơn](https://www.facebook.com/docongson2001)
-  - ✔*Github :* [DoCongSon](https://github.com/DoCongSon)
 =======
 ---
 ## Copyright® by DoCongSon
