@@ -7,4 +7,3 @@
 ---
 
 ## demo: [web ban hang](https://docongson.github.io/web-ban-hang/)
-ss
