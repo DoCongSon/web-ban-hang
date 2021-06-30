@@ -43,6 +43,15 @@ html {
     }
 }
 
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
 /* modal layout */
 
 .modal {
@@ -52,6 +61,7 @@ html {
     bottom: 0;
     left: 0;
     display: flex;
+    animation: fadeIn linear 0.1s;
 }
 
 .modal__overlay {
@@ -62,24 +72,54 @@ html {
 }
 
 .modal__body {
+    --growth-from: 0.7;
+    --growth-to: 1;
     margin: auto;
     z-index: 1;
     position: relative;
-    background-color: var(--white-color);
-    border-radius: 5px;
+    animation: growth linear 0.1s;
 }
 
 /* button style */
 .btn {
     min-width: 142px;
     height: 36px;
+    padding: 0 16px;
     text-decoration: none;
     border: none;
     border-radius: 2px;
     cursor: pointer;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6rem;
+}
+
+.auth-form__controls-back:hover {
+    background-color: rgba(220, 20, 60, 0.15);
+}
+
+.btn.btn--size-s {
+    font-size: 1.2rem;
+    height: 32px;
+    padding: 0 8px;
+}
+
+.btn--disible {
+    background-color: #333;
+    cursor: default;
 }
 
 .btn.btn--primary {
     background-color: var(--prinamy-color);
     color: var(--white-color);
+}
+
+/* icon */
+
+.icon {
+    width: 20px;
 }
