@@ -1,132 +1,129 @@
 :root {
-  --white-color: #fff;
-  --black-color: #000;
-  --text-color: #333;
-  --prinamy-color: crimson;
-  --border-color: darkgray;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --prinamy-color: crimson;
+    --border-color: darkgray;
 
-  --header-height: 150px;
-  --navbar-height: 48px;
-  --navbar-wiht-search-height: calc(
-    var(--header-height) - var(--navbar-height)
-  );
+    --header-height: 150px;
+    --navbar-height: 48px;
+    --navbar-wiht-search-height: calc(var(--header-height) - var(--navbar-height));
 }
 
 * {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 html {
-  font-size: 62.5%;
-  line-height: 1.6rem;
-  font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
 }
 
 .grid {
-  width: 1400px;
-  max-width: 100%;
-  margin: 0 auto;
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .grid__full-width {
-  width: 100%;
+    width: 100%;
 }
 
 .grid__row {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* animation */
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes growth {
-  from {
-    transform: scale(var(--growth-from));
-  }
-  to {
-    transform: scale(var(--growth-to));
-  }
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
 }
 
 /* modal layout */
 
 .modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  animation: fadeIn linear 0.1s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    animation: fadeIn linear 0.1s;
 }
 
 .modal__overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .modal__body {
-  --growth-from: 0.7;
-  --growth-to: 1;
-  margin: auto;
-  z-index: 1;
-  position: relative;
-  animation: growth linear 0.1s;
+    --growth-from: 0.7;
+    --growth-to: 1;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+    animation: growth linear 0.1s;
 }
 
 /* button style */
 .btn {
-  min-width: 142px;
-  height: 36px;
-  padding: 0 16px;
-  text-decoration: none;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-  background-color: var(--white-color);
-  color: var(--text-color);
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1.6rem;
+    min-width: 142px;
+    height: 36px;
+    padding: 0 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6rem;
 }
 
 .auth-form__controls-back:hover {
-  background-color: rgba(220, 20, 60, 0.15);
+    background-color: rgba(220, 20, 60, 0.15);
 }
 
 .btn.btn--size-s {
-  font-size: 1.2rem;
-  height: 32px;
-  padding: 0 8px;
+    font-size: 1.2rem;
+    height: 32px;
+    padding: 0 8px;
 }
 
 .btn--disible {
-  background-color: #333;
-  cursor: default;
+    background-color: #333;
+    cursor: default;
 }
 
 .btn.btn--primary {
-  background-color: var(--prinamy-color);
-  color: var(--white-color);
+    background-color: var(--prinamy-color);
+    color: var(--white-color);
 }
 
 /* icon */
 
 .icon {
-  width: 20px;
+    width: 20px;
 }
-
