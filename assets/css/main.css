@@ -414,6 +414,7 @@
 .header__search-input-wrap {
     flex: 1;
     height: 100%;
+    position: relative;
 }
 
 .header__search-input {
@@ -424,8 +425,57 @@
     outline: none;
     font-size: 1.4rem;
     color: var(--text-color);
-    padding: 0 8px;
+    padding: 0 8px 0 16px;
 }
+
+.header__search-input:focus ~ .header__search-history {
+    display: block;
+}
+/*========== input history ========== */
+.header__search-history {
+    left: 0;
+    top: calc(100% + 4px);
+    position: absolute;
+    width: calc(100% - 22px);
+    background-color: var(--white-color);
+    box-shadow: 0 0 2px darkgray;
+    border-radius: 3px;
+    display: none;
+    animation: fadeIn ease-in 0.2s;
+    overflow: hidden;
+}
+
+.header__search-history-heading {
+    font-size: 1.4rem;
+    color: darkgray;
+    padding: 8px 16px 0;
+    display: block;
+}
+.header__search-history-list {
+    padding: 0;
+    list-style: none;
+    margin: 16px 0 0 0;
+}
+.header__search-history-item {
+    
+}
+
+.header__search-history-item:hover {
+    background-color: rgb(236, 220, 224);
+    cursor: pointer;
+}
+
+.header__search-history-item a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 16px;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+}
+
+/* ================================== */
 
 .header__search-select {
     border-left: 1px solid var(--border-color);
@@ -524,16 +574,4 @@
 
 .header__search-option-item--active i {
     display: inline-block;
-}
-/* input histỏy */
-.header__search-input-wrap {
-}
-
-.header__search-history {
-}
-.header__search-history-heading {
-}
-.header__search-history-list {
-}
-.header__search-history-item {
 }
