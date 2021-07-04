@@ -423,7 +423,7 @@
 
 .header__cart-list{
     position: absolute;
-    width: 300px;
+    width: 400px;
     right: 0;
     top: 100%;
     border-radius: 3px;
@@ -462,7 +462,7 @@
 } 
 
 .header__cart-list--no-item-img{
-    margin: auto;
+    margin: 30px auto;
     width: 150px;
     opacity: 0.5;
     display: none;
@@ -477,51 +477,97 @@
 
 .header__cart-heading{
     font-size: 1.4rem;
-    color: var(--text-color);
-
+    color: darkgray;
+    margin: 12px 16px;
 }
 .header__cart-list-items{
-
+    padding-left: 0;
+    margin: 0;
+    overflow-y: auto;
+    max-height: 260px;
+    scroll-snap-type: y;
 }
 .header__cart-item{
-
+    display: flex;
+    align-items: center;
+    scroll-snap-align: start;
 }
-.header__cart-item-img{
 
+.header__cart-item:hover {
+    background-color: rgb(236, 220, 224);
+    cursor: pointer;
+}
+
+.header__cart-item-img{
+    width: 46px;
+    height: 46px;
+    border-radius: 3px;
+    margin: 4px 8px 4px 16px;
+    object-fit: contain;
+    border: 1px solid rgb(221, 221, 221);
 }
 .header__cart-item-content{
-
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 16px;
 }
 .header__cart-item-content__info{
-
 }
 .header__cart-item-content__info-name{
-
+    display: block;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 4px 0;
 }
 .header__cart-item-content__info-Characteristics{
-
+    display: block;
+    font-size: 1.2rem;
+    display: block;
+    color: rgb(92, 92, 92);
+    margin: 4px 0;
 }
 .header__cart-item-content__info-price-wrap{
-
+    min-width: 100px;
 }
 .header__cart-item-content__info-price{
-
+    margin: 4px 0;
+    text-align: end;
 }
 .header__cart-item-content__info-unit-price{
-
+    font-size: 1.4rem;
+    color: var(--prinamy-color);
 }
 .header__cart-item-content__info-multiply{
-
+    font-size: 1.2rem;
+    color: rgb(92, 92, 92);
 }
 .header__cart-item-content__info-amount{
-
+    color: rgb(92, 92, 92);
+    font-size: 1.2rem;
 }
 .header__cart-item-delete{
-
+    margin: 4px 0;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 500;
+    display: block;
+    text-align: end;
 }
 
-.btn-view-cart {
+.view-cart-btn {
+    float: right;
+    margin: 4px;
+}
 
+.view-cart-btn a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.view-cart-btn:hover {
+    background-color: rgba(220, 20, 60, 0.8);
 }
 
 .header__cart-notify {
