@@ -12,6 +12,7 @@
 .header__navbar-list {
     list-style-type: none;
     padding-left: 0;
+    display: flex;
 }
 
 .header__navbar-item {
@@ -77,6 +78,90 @@
     cursor: text;
     color: var(--white-color);
     margin-right: 4px;
+}
+
+.header__navbar-item-user{
+    position: relative;
+}
+
+.header__navbar-item-user:hover .header__navbar-user-menu {
+    display: block;
+}
+
+.header__navbar-item-user-avatar{
+    width: 32px;
+    border: 1px solid darkgray;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.header__navbar-item-user-name{
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: 4px;
+}
+.header__navbar-user-menu{
+    position: absolute;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    width: 142px;
+    top: calc(100% + 8px);
+    right: 0;
+    z-index: 1;
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.4rem;
+    border-radius: 3px;
+    box-shadow: 0 1px 8px darkgray;
+    display: none;
+    animation: headerNotifyGrowth ease-in 0.2s;
+    transform-origin: calc(100% - 105px) top;
+    will-change: opacity, transform;
+}
+
+.header__navbar-user-menu::after {
+    position: absolute;
+    left: 27px;
+    top: -12px; 
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 6px 10px;
+    border-color: transparent transparent var(--white-color) transparent;
+}
+
+.header__navbar-user-menu::before {
+    content: "";
+    position: absolute;
+    width: 86px;
+    height: 16px;
+    top: -16px;
+    right: 0;
+}
+
+
+.header__navbar-user-item{
+    padding: 4px 8px;
+    display: block;
+}
+
+.header__navbar-user-item:first-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.header__navbar-user-item:last-child {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.header__navbar-user-item:hover {
+    background-color: rgb(236, 220, 224);
+}
+
+.header__navbar-user--log-out{
+    border-top: 1px solid rgb(202, 202, 202);
+    color: limegreen;
 }
 
 /* qr code */
