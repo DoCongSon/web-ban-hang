@@ -97,7 +97,7 @@
 .header__navbar-item-user-name{
     color: var(--white-color);
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 400;
     margin-left: 4px;
 }
 .header__navbar-user-menu{
@@ -177,6 +177,7 @@
     border-radius: 2px;
     display: none;
     animation: fadeIn ease-in 0.2s;
+    box-shadow: 0 1px 8px darkgray;
 }
 
 .header__qr::before {
@@ -214,7 +215,7 @@
     right: 0;
     cursor: default;
     animation: headerNotifyGrowth ease-in 0.2s;
-    transform-origin: calc(100% - 20px) top;
+    transform-origin: calc(100% - 39px) top;
     will-change: opacity, transform;
     display: none;
     z-index: 1;
@@ -482,6 +483,13 @@
     width: 250px;
 }
 
+.header__logo-link {
+    display: block;
+    width: 200px;
+    text-decoration: none;
+    color: transparent;
+}
+
 .header__logo-img {
     width: 200px;
 }
@@ -522,7 +530,7 @@
     background-color: var(--white-color);
     box-shadow: 0 1px 8px darkgrey;
     animation: headerNotifyGrowth ease-in 0.2s;
-    transform-origin: calc(100% - 20px) top;
+    transform-origin: calc(100% - 34px) top;
     will-change: opacity, transform;
     display: none;
     cursor: default;
