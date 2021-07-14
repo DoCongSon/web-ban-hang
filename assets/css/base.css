@@ -104,7 +104,7 @@ html {
 
 /* button style */
 .btn {
-  min-width: 120px;
+  min-width: 124px;
   height: 36px;
   padding: 0 16px;
   text-decoration: none;
@@ -144,4 +144,70 @@ html {
 
 .icon {
   width: 20px;
+}
+
+
+/* select input */
+
+.select-input{
+  height: 34px;
+  min-width: 200px;
+  padding: 0 12px;
+  border-radius: 3px;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.select-input:hover .select-input__list{
+  display: block;
+}
+
+
+.select-input__label{
+  display: block;
+  font-size: 1.4rem;
+}
+.select-input__icon{
+  display: block;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  position: relative;
+  top: 2px;
+}
+.select-input__list{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 27px;
+  padding: 8px 16px;
+  border-radius: 3px;
+  box-shadow: 0 1px 8px darkgray;
+  background-color: var(--white-color);
+  list-style: none;
+  animation: fadeIn ease-in 0.2s;
+  display: none;
+}
+
+.select-input__list::before {
+  display: block;
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  height: 4px;
+  top: -4px;
+}
+
+.select-input__item-link{
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  display: block;
+  padding: 4px 0;
+}
+.select-input__item-link:hover{
+  color: var(--prinamy-color);
 }
