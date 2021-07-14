@@ -104,7 +104,7 @@ html {
 
 /* button style */
 .btn {
-  min-width: 142px;
+  min-width: 120px;
   height: 36px;
   padding: 0 16px;
   text-decoration: none;
@@ -114,7 +114,7 @@ html {
   background-color: var(--white-color);
   color: var(--text-color);
   font-size: 1.5rem;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   line-height: 1.6rem;
