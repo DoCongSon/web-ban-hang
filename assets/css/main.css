@@ -1031,10 +1031,23 @@
 }
 
 .home-product-item{
+    display: block;
+    text-decoration: none;
     position: relative;
     background-color: var(--white-color);
     margin-top: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px #ccc;
+    transition: transform ease-in 0.2s;
+    will-change: transform;
 }
+
+.home-product-item:hover {
+    box-shadow: 0 1px 20px #e6dcdc;
+    transform: translateY(-1px);
+}
+
 .home-product-item__img{
     padding-top: 100%;
     background-repeat: no-repeat;
