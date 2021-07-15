@@ -36,19 +36,24 @@ html {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 -12px;
+  margin: 0 -5px;
 }
 
 /* test */
 
 .grid__colum-2 {
-  padding: 0 12px;
+  padding: 0 5px;
   width: calc(100% / 6);
+}
+
+.grid__colum-2-4 {
+  padding: 0 5px;
+  width: 20%;
 }
 
 
 .grid__colum-10 {
-  padding: 0 12px;
+  padding: 0 5px;
   width: calc(100% / 6 * 5);
 }
 
