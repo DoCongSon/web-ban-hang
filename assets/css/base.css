@@ -195,6 +195,7 @@ html {
   list-style: none;
   animation: fadeIn ease-in 0.2s;
   display: none;
+  z-index: 1;
 }
 
 .select-input__list::before {
