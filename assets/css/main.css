@@ -105,7 +105,7 @@
     background-color: var(--white-color);
     color: var(--text-color);
     width: 142px;
-    top: calc(100% + 8px);
+    top: calc(100% + 10px);
     right: 0;
     z-index: 1;
     list-style: none;
@@ -121,7 +121,7 @@
 
 .header__navbar-user-menu::after {
     position: absolute;
-    left: 27px;
+    left: 22%;
     top: -12px; 
     content: "";
     display: block;
@@ -270,7 +270,7 @@
 
 .header__notify-list {
     padding-left: 0;
-    height: 400px;
+    height: 60vh;       
     scroll-snap-type: y;
     overflow-y: scroll; /* Add the ability to scroll */
     -ms-overflow-style: none;  /*Hide scrollbar for IE and Edge */
@@ -311,13 +311,11 @@
 }
 
 .header__notify-name {
-    display: block;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.8rem;
     color: var(--black-color);
     overflow: hidden;
-    display: block;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
@@ -547,6 +545,7 @@
     will-change: opacity, transform;
     display: none;
     cursor: default;
+    z-index: 1;
 }
 
 .header__cart-list::before {
@@ -596,7 +595,7 @@
 .header__cart-list-items{
     padding-left: 0;
     margin: 0;
-    max-height: 260px;
+    max-height: 50vh;
     scroll-snap-type: y;
     overflow-y: scroll; /* Add the ability to scroll */
     -ms-overflow-style: none;  /*Hide scrollbar for IE and Edge */
@@ -641,6 +640,10 @@
     color: var(--text-color);
     font-weight: 600;
     margin: 4px 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 .header__cart-item-content__info-Characteristics{
     display: block;
@@ -648,6 +651,10 @@
     display: block;
     color: rgb(92, 92, 92);
     margin: 4px 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 .header__cart-item-content__info-price-wrap{
     min-width: 100px;
@@ -1062,7 +1069,6 @@
     height: 3.6rem;
     margin: 8px;
     overflow: hidden;
-    display: block;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
