@@ -1044,7 +1044,6 @@
     background-color: var(--white-color);
     margin-top: 10px;
     border-radius: 3px;
-    overflow: hidden;
     box-shadow: 0 1px 4px #ccc;
     transition: transform ease-in 0.2s;
     will-change: transform;
@@ -1060,6 +1059,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
 }
 .home-product-item__name{
     font-size: 1.4rem;
@@ -1187,6 +1188,7 @@ i.home-product-item__like-icon--liked{
     background-color: currentColor;
     color: rgba(255, 217, 0, 0.9);
     text-align: center;
+    border-top-right-radius: 3px;
 }
 
 .home-product-item__sale-off::after{
@@ -1210,5 +1212,5 @@ i.home-product-item__like-icon--liked{
 .home-product-item__sale-off-label{
     font-size: 1.2rem;
     color: var(--white-color);
-    font-weight: 600    ;
+    font-weight: 600;
 }
