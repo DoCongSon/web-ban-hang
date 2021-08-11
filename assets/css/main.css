@@ -1077,17 +1077,18 @@
 .home-product-item__price{
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 8px 0;
 }
 .home-product-item__price-old{
-    margin-left: 8px;
+    margin: 0 8px;
     font-size: 1.4rem;
     color:#555;
     text-decoration: line-through;
 }
 .home-product-item__price-current{
-    margin-left: 8px;
+    margin: 0 8px;
     font-size: 1.6rem;
     color: var(--prinamy-color);
 }
