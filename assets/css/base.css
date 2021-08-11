@@ -218,3 +218,38 @@ html {
 .select-input__item-link:hover{
   color: var(--prinamy-color);
 }
+
+/* pagination */
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.pagination-item{
+  margin: 0 8px;
+}
+.pagination-item__link{
+  --height: 30px;
+  display: block;
+  text-align: center;
+  line-height: var(--height);
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 2rem;
+  height: var(--height);
+  min-width: 40px;
+  border-radius: 3px;
+}
+
+.pagination-item--active .pagination-item__link {
+  background-color: var(--prinamy-color);
+  color: var(--white-color);
+}
+
+.pagination-item--active:hover .pagination-item__link {
+  background-color: rgba(220, 20, 60, 0.8);
+}
+
+.pagination-item__icon{
+}
