@@ -1214,3 +1214,7 @@ i.home-product-item__like-icon--liked{
     color: var(--white-color);
     font-weight: 600;
 }
+
+.home-product__pagination {
+    margin: 48px 0 32px 0;
+}
