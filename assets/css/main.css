@@ -1219,3 +1219,101 @@ i.home-product-item__like-icon--liked{
 .home-product__pagination {
     margin: 48px 0 32px 0;
 }
+
+/* footer */
+.footer{
+    padding: 25px 15px 15px;
+    border-top: 4px solid var(--prinamy-color);
+}
+
+.footer__heading{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+
+.footer__list{
+    padding-left: 0;
+    list-style: none;
+}
+.footer__item {
+    
+}
+.footer__item-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-bottom: 12px;
+    display: block;
+}
+
+.footer__item-link:hover{
+    color: var(--prinamy-color);
+}
+
+.footer__item-icon {
+    margin-right: 8px;
+}
+.footer__download{
+    display: flex;
+    justify-content: center;
+}
+.footer__download-qr{
+    width: 100px;
+}
+.footer__download-apps{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 12px;
+}
+.footer__download-link{
+    text-decoration: none;
+    color: transparent;
+}
+.footer__download-app{
+    height: 28px;
+}
+.footer__company-information{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer__company-lable{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+}
+
+.footer__company-lable span{
+    margin: 48px 0;
+    padding: 0 32px;
+    border-left: 2px solid var(--border-color);
+}
+
+.footer__company-lable span:first-child{
+    border: none;
+}
+
+
+.footer__company-logo{
+    width: 160px;
+    display: block;
+    margin: 0 auto;
+}
+.footer__company-name{
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.footer__company-address{
+    margin-top: 12px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
