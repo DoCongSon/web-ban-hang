@@ -1238,14 +1238,13 @@ i.home-product-item__like-icon--liked{
     list-style: none;
 }
 .footer__item {
-    
+    margin-bottom: 12px;
+    display: block;
 }
 .footer__item-link{
     text-decoration: none;
     font-size: 1.4rem;
     color: var(--text-color);
-    margin-bottom: 12px;
-    display: block;
 }
 
 .footer__item-link:hover{
