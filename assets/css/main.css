@@ -1409,12 +1409,12 @@ i.home-product-item__like-icon--liked{
 }
 .footer__company-lable{
     display: block;
-    margin: 0;
-    padding: 8px 0;
     text-align: center;
     font-size: 2rem;    
     font-weight: normal;
     line-height: 2.2rem;
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .footer__company-lable:first-child{
