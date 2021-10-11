@@ -2,13 +2,14 @@
   --white-color: #fff;
   --black-color: #000;
   --text-color: #333;
-  --prinamy-color: crimson;
+  --primary-color: crimson;
   --border-color: darkgray;
   --star-gold-color: gold;
 
   --header-height: 150px;
   --navbar-height: 48px;
-  --navbar-wiht-search-height: calc(var(--header-height) - var(--navbar-height));
+  --navbar-with-search-height: calc(var(--header-height) - var(--navbar-height));
+  --header-sort-bar-height: 40px;
 }
 
 * {
@@ -21,44 +22,6 @@ html {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
-
-/* reponsive */
-
-.grid {
-  width: 1400px;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.grid__full-width {
-  width: 100%;
-}
-
-.grid__row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -5px;
-}
-
-/* test */
-
-.grid__colum-2 {
-  padding: 0 5px;
-  width: calc(100% / 6);
-}
-
-.grid__colum-2-4 {
-  padding: 0 5px;
-  width: 20%;
-}
-
-
-.grid__colum-10 {
-  padding: 0 5px;
-  width: calc(100% / 6 * 5);
-}
-
-
 
 /* animation */
 
@@ -142,7 +105,7 @@ html {
 }
 
 .btn.btn--primary {
-  background-color: var(--prinamy-color);
+  background-color: var(--primary-color);
   color: var(--white-color);
 }
 
@@ -216,7 +179,7 @@ html {
   padding: 4px 0;
 }
 .select-input__item-link:hover{
-  color: var(--prinamy-color);
+  color: var(--primary-color);
 }
 
 /* pagination */
@@ -243,7 +206,7 @@ html {
 }
 
 .pagination-item--active .pagination-item__link {
-  background-color: var(--prinamy-color);
+  background-color: var(--primary-color);
   color: var(--white-color);
 }
 
